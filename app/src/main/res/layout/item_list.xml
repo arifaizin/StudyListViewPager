@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivBuah"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/alpukat" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/ivBuah"
+        android:layout_toRightOf="@+id/ivBuah"
+        android:text="Buah"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tvNamabuah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivBuah"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/ivBuah"
+        android:layout_toRightOf="@+id/ivBuah"
+        android:text="Alpukat"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+</RelativeLayout>
