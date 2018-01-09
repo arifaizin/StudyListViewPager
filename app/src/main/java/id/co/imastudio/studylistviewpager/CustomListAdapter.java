@@ -32,8 +32,12 @@ public class CustomListAdapter extends ArrayAdapter {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View itemView = inflater.inflate(R.layout.item_list, null, true);
+        //LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        //View itemView = inflater.inflate(R.layout.item_list, null, true);
+        
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View itemView = inflater.inflate(R.layout.list_item, parent, false);
+
 
         TextView teksNamaBuah = (TextView) itemView.findViewById(R.id.tvNamabuah);
         ImageView imageBuah = (ImageView) itemView.findViewById(R.id.ivBuah);
